@@ -201,3 +201,22 @@ footer {
         padding: 10px 20px;
     }
 }
+/* Socials Section */
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Responsive Button Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .socials {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center;
+    }
+    
+    .socials .button {
+        width: 80%; /* Make buttons wider on mobile for better touch accessibility */
+    }
+}
